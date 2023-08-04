@@ -1,0 +1,212 @@
+.nav-toggle{
+    display: none;
+}
+@media screen and (max-width : 991px) {
+ 
+    .nav-toggle{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    /* .nav-links{
+        display: none;
+    } */
+   .nav-links ul{
+    flex-direction: column;
+   }
+   .content{
+    flex-direction:column;
+    display: flex;
+    justify-content: center;
+   }
+   .nav-links{
+    position: absolute;
+   }
+   .main-nav{
+    width: 100%;
+    overflow: initial;
+    margin: 0 20px;
+    border: 50px;
+  
+   }
+   #nav-links{
+    margin: 0 -20px;
+    border: 10px;
+
+   }
+   .nav-links{
+
+     background-size: cover; 
+    position:relative;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px 0px;
+    padding: 0px 0px;
+    left: -10px;
+    top: -100%;
+    width: 20%;
+    /* flex-direction: column; */
+    height: 100%;
+    /* justify-content: center; */
+    /* padding-block: 20px; */
+   }
+   .nav-links.active{
+    left: 0px;
+    margin-left: 0px;
+    display: none;
+    transition: 0.2s all ease-in-out;
+
+    
+   } 
+   .nav-toggle.active{
+    display: none;
+   }
+}
+
+@media screen and (max-width:767px) {
+     
+    h1{
+        font-size: 2rem;
+    }
+    
+
+
+
+    .header-section{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .header-right{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-right img{
+        width: 100%;
+
+        align-items: center;
+        margin: 0 px;
+        padding:0 200px;
+    }
+    .header-left{
+        width: 100vw;
+        text-align: center;
+        padding: 0px 0px;
+        text-align: center;
+    }
+    .primary-button{
+        width: 100%;
+        text-align: center;
+       
+        padding: 0 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+        padding-top: 20px;
+        
+    }
+    .para{
+        width: 100%;
+        /* text-align: justify; */
+    }
+    #para1{
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+
+    .big-features-container{
+        flex-direction: column;
+
+    }
+    /* .top-head{
+        font-size: 0.1rem;
+
+    } */
+    /* .small-bold-text{
+        font-size: 0.1px;
+    } */
+    .banner-text{
+        font-size: 40%;
+    }
+
+
+    
+   
+}    
+
+@media screen and (max-width: 479px) {
+    :root{
+        --padding-inline-section : 10px;
+
+        
+    }
+    .content{
+        flex-direction:column;
+        display: flex;
+        justify-content: center;
+       }
+   
+    h1{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 0.75rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .features-card{
+        min-width: 80%;
+        justify-content: center;
+        /* background-color: black; */
+        margin: 0px 0px;
+    }
+    .features-area{
+        /* text-align: center; */
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+    } 
+    .container{
+        overflow: hidden;
+    }
+    /* .main-nav img{
+        width: 10px;
+    } */
+  
+
+    
+}
+
+
+
+
+
+
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(235, 153, 31); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    overflow: none;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  
